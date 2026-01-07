@@ -3,7 +3,7 @@
 #Edits by Andrew Jahn, University of Michigan, 07.22.2020
 
 #User inputs:
-bids_root_dir=$HOME/Documents/GitHub/IQ-Influence-on-Brain-Auditory-Cortex-in-Schizophrenia
+bids_root_dir=$HOME/Documents/GitHub/IQ-Influence-on-Brain-Auditory-Cortex-in-Schizophrenia/data
 subj=08
 nthreads=4
 mem=20 #gb
