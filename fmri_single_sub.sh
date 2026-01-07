@@ -16,7 +16,7 @@ mem=`echo "${mem//[!0-9]/}"` #remove gb at end
 mem_mb=`echo $(((mem*1000)-5000))` #reduce some memory for buffer space during pre-processing
 
 #export TEMPLATEFLOW_HOME=$HOME/.cache/templateflow
-export FS_LICENSE=$HOME/Documents/GitHub/IQ-Influence-on-Brain-Auditory-Cortex-in-Schizophrenia/license.txt
+export FS_LICENSE=$HOME/Documents/GitHub/IQ-Influence-on-Brain-Auditory-Cortex-in-Schizophrenia/derivatives/license.txt
 
 #Run fmriprep
 if [ $container == singularity ]; then
@@ -26,7 +26,7 @@ if [ $container == singularity ]; then
     --participant-label $subj \
     --skip-bids-validation \
     --md-only-boilerplate \
-    --fs-license-file $HOME/Documents/GitHub/IQ-Influence-on-Brain-Auditory-Cortex-in-Schizophrenia/license.txt \
+    --fs-license-file $HOME/Documents/GitHub/IQ-Influence-on-Brain-Auditory-Cortex-in-Schizophrenia/derivatives/license.txt \
     --fs-no-reconall \
     --output-spaces MNI152NLin2009cAsym:res-2 \
     --nthreads $nthreads \
@@ -38,7 +38,7 @@ else
     --participant-label $subj \
     --skip-bids-validation \
     --md-only-boilerplate \
-    --fs-license-file $HOME/Documents/GitHub/IQ-Influence-on-Brain-Auditory-Cortex-in-Schizophrenia/license.txt \
+    --fs-license-file $HOME/Documents/GitHub/IQ-Influence-on-Brain-Auditory-Cortex-in-Schizophrenia/derivatives/license.txt \
     --fs-no-reconall \
     --output-spaces MNI152NLin2009cAsym:res-2 \
     --nthreads $nthreads \
