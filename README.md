@@ -1,0 +1,1 @@
+# IQ-Influence-on-the-Brain-s-Auditory-Cortex-Activation-in-Schizophrenia
